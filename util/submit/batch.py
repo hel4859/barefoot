@@ -80,4 +80,5 @@ try:
 finally:
     os.remove(tmp)
 
-assert output.startswith('SUCCESS\n'), repr(output[:16])
+if not output.startswith('SUCESS\n'):
+    sys.exit(1)
