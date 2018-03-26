@@ -80,5 +80,5 @@ try:
 finally:
     os.remove(tmp)
 
-if not output.startswith('SUCESS\n'):
+if not output.startswith('SUCCESS\n'):
     sys.exit(1)
